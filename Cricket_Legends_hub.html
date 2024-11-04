@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Legends Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Home Section -->
+    <header class="home">
+        <h1>Welcome to Cricket Legends Hub</h1>
+        <p>Your destination to explore the world of cricket legends</p>
+    </header>
+
+    <!-- Featured Players Section -->
+    <section class="featured-players">
+        <h2>Featured Players</h2>
+        <div class="player">
+            <img src="sachin.jpg" alt="Sachin Tendulkar">
+            <h3>Sachin Tendulkar</h3>
+            <p>Known as the "God of Cricket," Sachin holds numerous records and inspired millions worldwide.</p>
+        </div>
+        <div class="player">
+            <img src="virat.jpg" alt="Virat Kohli">
+            <h3>Virat Kohli</h3>
+            <p>A modern-day legend, Virat is known for his aggressive style and consistent performances.</p>
+        </div>
+        <div class="player">
+            <img src="dhoni.jpg" alt="MS Dhoni">
+            <h3>MS Dhoni</h3>
+            <p>India's most successful captain, known for his calm demeanor and match-winning strategies.</p>
+        </div>
+    </section>
+
+    <!-- Interactive Map Section -->
+    <section class="interactive-map">
+        <h2>Interactive Map</h2>
+        <p>Explore the hometowns of your favorite players.</p>
+        <a href="https://www.google.com/search?q=home+town+of+virat%2Csachin+tendulkar%2Cdhoni&sca_esv=fb24bdf32a7113af&sxsrf=ADLYWIJnoR_bFGfzRT_D0v9d5oglKqgqNA%3A1729996910900&ei=bqgdZ9TQNoKXseMP1aSp2AM&ved=0ahUKEwjUv9jaxK2JAxWCS2wGHVVSCjsQ4dUDCA8&uact=5&oq=home+town+of+virat%2Csachin+tendulkar%2Cdhoni&gs_lp=Egxnd3Mtd2l6LXNlcnAiKWhvbWUgdG93biBvZiB2aXJhdCxzYWNoaW4gdGVuZHVsa2FyLGRob25pMggQABiABBiiBDIIEAAYgAQYogQyCBAAGIAEGKIEMggQABiABBiiBDIIEAAYgAQYogRI-TpQrANYtjZwAXgBkAEAmAH6AaAB7hCqAQUwLjMuN7gBA8gBAPgBAZgCCqACqg_CAgoQABiwAxjWBBhHwgIEECMYJ5gDAIgGAZAGCJIHBTEuMi43oAfLMA&sclient=gws-wiz-serp" width="640" height="480" target="_blank">Google site to see the detail of these players hometown</a>
+    </section>
+
+    <!-- Top Matches Section -->
+    <section class="top-matches">
+        <h2>Top Matches</h2>
+        <div class="match">
+            <h3>2011 ICC World Cup Final - India vs. Sri Lanka</h3>
+            <iframe width="740" height="416" src="https://www.youtube.com/embed/YphL3Whh5B0" title="Cricket World Cup 2011 Final: India v Sri Lanka | Match Highlights" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>India clinched the World Cup after 28 years, with MS Dhoni's memorable winning shot.</p>
+        </div>
+    </section>
+
+    <!-- Fan Zone Section -->
+    <section class="fan-zone">
+        <h2>Fan Zone</h2>
+        <p>Share your favorite player stories or vote for the greatest player of all time!</p>
+        <form id="fan-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" required><br><br>
+            
+            <label for="player">Favorite Player:</label>
+            <input type="text" id="player" required><br><br>
+            
+            <label for="story">Your Story:</label><br>
+            <textarea id="story" rows="4" cols="50" required></textarea><br><br>
+            
+            <button type="button" onclick="submitStory()">Submit</button>
+        </form>
+
+        <h3>Vote for the Greatest Player</h3>
+        <button onclick="votePlayer('Sachin Tendulkar')">Sachin Tendulkar</button>
+        <button onclick="votePlayer('Virat Kohli')">Virat Kohli</button>
+        <button onclick="votePlayer('MS Dhoni')">MS Dhoni</button>
+        <p id="vote-result"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

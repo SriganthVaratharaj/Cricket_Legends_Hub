@@ -1,0 +1,85 @@
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: rgb(37,36,36);
+}
+
+h1, h2 {
+    text-align: center;
+    color: darkgreen; /* Dark green for cricket theme */
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Home Section */
+.home {
+    background-color: rgb(37, 36, 36);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Featured Players Section */
+.featured-players {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.player {
+    text-align: center;
+    width: 200px;
+}
+
+.player img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.player h3 {
+    margin: 10px 0 5px;
+}
+
+/* Interactive Map */
+.interactive-map iframe {
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+/* Top Matches */
+.top-matches iframe {
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+/* Fan Zone */
+.fan-zone {
+    text-align: center;
+}
+
+#fan-form {
+    margin-top: 10px;
+}
+
+button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
+}
